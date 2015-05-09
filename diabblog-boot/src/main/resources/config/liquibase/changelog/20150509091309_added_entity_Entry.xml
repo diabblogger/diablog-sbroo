@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Entry.
+    -->
+    <changeSet id="20150509091309" author="jhipster">
+        <createTable tableName="T_ENTRY">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="blood_sugar_level" type="decimal(10,2)"/>
+            <column name="carbs" type="varchar(255)"/>
+            <column name="comments" type="varchar(255)"/>
+            <column name="notes" type="varchar(255)"/>
+            <column name="correction" type="varchar(255)"/>
+            <column name="created" type="timestamp"/>
+            <column name="fast_insulin" type="integer"/>
+            <column name="slow_insulin" type="integer"/>
+        </createTable>
+        <dropDefaultValue tableName="T_ENTRY" columnName="created" columnDataType="datetime"/>
+
+        
+    </changeSet>
+</databaseChangeLog>

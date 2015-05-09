@@ -1,0 +1,28 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-05-07 21:52:50
+project --topLevelPackage org.diabblog
+help
+help database introspect 
+help database introspect 
+help database
+help database introspect
+jpa setup --provider HIBERNATE --database POSTGRES
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-05-07 21:59:03
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-05-07 22:04:44
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-05-07 22:05:00
+// [failed] database introspect --schema unable-to-obtain-connection 
+// [failed] database introspect --schema no-schema-required
+addon info id --searchResultId 01
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr deploy --bundleSymbolicName org.springframework.roo.wrapping.postgresql-jdbc4
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+database introspect --schema public
+database introspect --schema public --file
+database reverse engineer --schema public --repository --testAutomatically --package ~.domain
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-05-07 23:02:42
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2015-05-07 23:02:52
+database reverse engineer --schema public --package --activeRecord --repository  --service --testAutomatically
+perform tests
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2015-05-07 23:23:38

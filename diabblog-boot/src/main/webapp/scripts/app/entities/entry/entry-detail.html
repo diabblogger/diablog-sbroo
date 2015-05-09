@@ -1,0 +1,86 @@
+
+<div>
+    <h2><span translate="diabblogApp.entry.detail.title">Entry</span> {{entry.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.bloodSugarLevel">BloodSugarLevel</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.bloodSugarLevel}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.carbs">Carbs</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.carbs}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.comments">Comments</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.comments}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.notes">Notes</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.notes}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.correction">Correction</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.correction}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.created">Created</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.created}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.fastInsulin">FastInsulin</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.fastInsulin}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="diabblogApp.entry.slowInsulin">SlowInsulin</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{entry.slowInsulin}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="entry"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

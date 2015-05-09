@@ -1,0 +1,25 @@
+{
+    "diabblogApp": {
+        "entry" : {
+            "home": {
+                "title": "Entrys",
+                "createLabel": "Create a new Entry",
+                "createOrEditLabel": "Create or edit a Entry"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Entry {{ id }}?"
+            },
+            "detail": {
+                "title": "Entry"
+            },
+            "bloodSugarLevel": "BloodSugarLevel",
+            "carbs": "Carbs",
+            "comments": "Comments",
+            "notes": "Notes",
+            "correction": "Correction",
+            "created": "Created",
+            "fastInsulin": "FastInsulin",
+            "slowInsulin": "SlowInsulin"
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "bloodSugarLevel",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "BloodSugarLevel",
+            "fieldNameUnderscored": "blood_sugar_level",
+            "fieldInJavaBeanMethod": "BloodSugarLevel",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "carbs",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Carbs",
+            "fieldNameUnderscored": "carbs",
+            "fieldInJavaBeanMethod": "Carbs",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "comments",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Comments",
+            "fieldNameUnderscored": "comments",
+            "fieldInJavaBeanMethod": "Comments",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "notes",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Notes",
+            "fieldNameUnderscored": "notes",
+            "fieldInJavaBeanMethod": "Notes",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "correction",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Correction",
+            "fieldNameUnderscored": "correction",
+            "fieldInJavaBeanMethod": "Correction",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "created",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Created",
+            "fieldNameUnderscored": "created",
+            "fieldInJavaBeanMethod": "Created",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "fastInsulin",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "FastInsulin",
+            "fieldNameUnderscored": "fast_insulin",
+            "fieldInJavaBeanMethod": "FastInsulin",
+            "fieldValidate": true,
+            "fieldValidateRules": []
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "slowInsulin",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "SlowInsulin",
+            "fieldNameUnderscored": "slow_insulin",
+            "fieldInJavaBeanMethod": "SlowInsulin",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "min"
+            ],
+            "fieldValidateRulesMin": 0
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150509091309",
+    "pagination": "infinite-scroll",
+    "validation": true
+}

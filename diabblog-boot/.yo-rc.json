@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "diabblog",
+    "packageName": "org.diabblog",
+    "packageFolder": "org/diabblog",
+    "authenticationType": "session",
+    "hibernateCache": "ehcache",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "172818d2a514ac6ec65b104bd27ad7a13a9a9ee8"
+  }
+}
